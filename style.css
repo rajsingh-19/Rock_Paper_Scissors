@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-green: #89C15E; 
+    --bg-white: #ffffff;
+}
+body {
+    background-color: var(--bg-green);
+}
+
+/*      custom css properties      */
+.link {
+    text-decoration: none;
+}
+.list-style-none {
+    list-style-type: none;
+}
+.shadow {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.d-block {
+    display: block;
+}
+.sticky {
+    position: sticky;
+}
+.top-0 {
+    top: 0;
+}
+.flex {
+    display: flex;
+}
+.dir-row {
+    flex-direction: row;
+}
+.dir-col {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.text-white {
+    color: #fafafa;
+}
+.text-gray-shade {
+    color: #656565;
+}
+.text-black-shade {
+    color: #252525;
+}
+.text-center {
+    text-align: center;
+}
+.border-none {
+    border: none;
+}
+.outline-none {
+    outline: none;
+}
+.hide {
+    display: none;
+}
+.float-r {
+    float: right;
+}
+.float-l {
+    float: left;
+}
+.v-visibility {
+    visibility: visible;
+}
+.h-visibility {
+    visibility: hidden;
+}
+.cursor {
+    cursor: pointer;
+}
+
+.margin-right-25 {
+    margin-right: 25px;
+} 
+
+.text-16 {
+    font-size: 16px;
+}
+.text-38 {
+    font-size: 38px;
+}
+.text-28 {
+    font-size: 28px;
+}
+.font-wt-600 {
+    font-weight: 600;
+}
+.font-wt-700 {
+    font-weight: 700;
+}
+.line-height-60 {
+    line-height: 60px;
+}
+
+/*          main page css                */
+.heading-score-container {
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    width: 800px;
+    height: 120px;
+    margin: 40px auto;
+    font-family: Roboto;
+    padding: 12px;
+}
+.computer-score-container, .user-score-container {
+    border-radius: 9px;
+    background-color: var(--bg-white);
+    width: 110px;
+    height: 100px;
+    padding: 5px;
+}
+
+/*          rules container              */
+
+
+/*          celebration page css         */

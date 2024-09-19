@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Rock Paper Scissors</title>
+    <meta name="author" content="Raj Singh">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <main>
+        <!--            Score Container          -->
+        <div class="heading-score-container flex dir-row justify-space-between align-center">
+            <div class="flex dir-col text-white">
+                <span class="text-28 font-wt-600">ROCK</span>
+                <span class="text-28 font-wt-600">PAPER</span>
+                <span class="text-28 font-wt-600">SCISSORS</span>
+            </div>
+            <div class="flex dir-row text-center">
+                <div class="computer-score-container margin-right-25">
+                    <div class="flex dir-col text-gray-shade">
+                        <span class="text-16 font-wt-600">COMPUTER</span>
+                        <span class="text-16 font-wt-700">SCORE</span>
+                    </div>
+                    <p class="text-black-shade text-38 font-wt-700 line-height-60">0</p>
+                </div>
+                <div class="user-score-container">
+                    <div class="flex dir-col text-gray-shade">
+                        <span class="text-16 font-wt-600">YOUR</span>
+                        <span class="text-16 font-wt-700">SCORE</span>
+                    </div>
+                    <p class="text-black-shade text-38 font-wt-700 line-height-60">0</p>
+                </div>
+            </div>
+        </div>
+        <!--            Content Container        -->
+        <div class="content-container">
+            <button onclick="rulesToggling()">Rules</button>
+        </div>
+        <!--            Rules Container          -->
+        <div id="rulesContainer" class="rules-container hide">
+            <p>kenfkjnefnelf</p>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
