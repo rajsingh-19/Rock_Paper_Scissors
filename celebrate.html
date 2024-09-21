@@ -11,22 +11,39 @@
     </style>
 </head>
 <body class="celebration-container">
-    <main>
-        <div class="stars-trophy">
-            <img src="./assets/stars.png" alt="stars images">
-            <img src="./assets/trophy.png" alt="trophy image">
+    <main class="flex dir-col">
+        <div class="stars-trophy-container flex justify-center">
+            <img class="stars" src="./assets/stars.png" alt="stars images">
+            <img class="trophy" src="./assets/trophy.png" alt="trophy image">
         </div>
-        <div class="content-container">
-                <div>Hurray  !!</div>
-                <div>You Won The Game</div>
-                <div>
-                    <button>
-                        Play Again
+        <div class="content-container flex dir-col align-center text-center text-white font-wt-600">
+                <div class="font-wt-600 text-80 line-height-90 hurray">HURRAY !!</div>
+                <div class="font-wt-600 text-35 line-height-46 winning-msg">YOU WON THE GAME</div> 
+                <div class="flex dir-row justify-center">
+                    <button class="play-btn font-wt-600 text-14 border-none cursor-pointer" onclick="goToHomePage()">
+                        PLAY AGAIN
                     </button>
                 </div>
         </div>
-        <div class="rules-container">
-            
+        <div>
+            <button class="rules-btn font-wt-600 text-16 cursor-pointer bg-transparent"  onclick="rulesToggling()">
+                RULES
+            </button>
+        </div>
+        <div class="rules-container flex dir-col hide" id="rulesContainer">
+            <p class="rules-heading text-24 font-wt-500 text-white text-center">Game Rules</p>
+            <ul class="list-container text-white">
+                <li class="text-18 font-wt-400">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li class="text-18 font-wt-400">Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <li class="text-18 font-wt-400">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li class="text-18 font-wt-400">If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <div>
+                <button class="cross-btn border-none cursor-pointer" onclick="closeRules()">
+                    <img class="cross-icon text-white bg-transparent" src="./assets/X.png" alt="cross icon img">
+                </button>
+            </div>
         </div>
     </main>
     <script src="./index.js"></script>

@@ -37,12 +37,27 @@
             </div>
         </div>
         <!--            Content Container        -->
-        <div class="content-container">
-            <button onclick="rulesToggling()">Rules</button>
-        </div>
+
         <!--            Rules Container          -->
-        <div id="rulesContainer" class="rules-container hide">
-            <p>kenfkjnefnelf</p>
+        <div>
+            <button class="rules-btn font-wt-600 text-16 cursor-pointer bg-transparent"  onclick="rulesToggling()">
+                RULES
+            </button>
+        </div>
+        <div class="rules-container flex dir-col hide" id="rulesContainer">
+            <p class="rules-heading text-24 font-wt-500 text-white text-center">Game Rules</p>
+            <ul class="list-container text-white">
+                <li class="text-18 font-wt-400">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li class="text-18 font-wt-400">Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <li class="text-18 font-wt-400">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li class="text-18 font-wt-400">If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <div>
+                <button class="cross-btn border-none cursor-pointer" onclick="closeRules()">
+                    <img class="cross-icon text-white bg-transparent" src="./assets/X.png" alt="cross icon img">
+                </button>
+            </div>
         </div>
     </main>
     <script src="./index.js"></script>
