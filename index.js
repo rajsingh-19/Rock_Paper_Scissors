@@ -1,7 +1,7 @@
 let rulesContainer = document.getElementById("rulesContainer");
 
-let rulesToggling = () => {
-    rulesContainer.classList.toggle("hide");
+let openRules = () => {
+    rulesContainer.classList.remove("hide");
 } 
 let closeRules = () => {
     rulesContainer.classList.add("hide");

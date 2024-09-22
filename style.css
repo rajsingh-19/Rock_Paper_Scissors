@@ -1,263 +1,338 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
-    --bg-green: #89C15E; 
-    --bg-white: #ffffff;
-    --bg-dark-green: #004429;
-    --bg-red: #FF0000;
+  --bg-green: #89c15e;
+  --bg-white: #ffffff;
+  --bg-dark-green: #004429;
+  --bg-red: #ff0000;
 }
 body {
-    background-color: var(--bg-green);
+  background-color: var(--bg-green);
 }
 
 /*      custom css properties      */
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .list-style-none {
-    list-style-type: none;
-}
-.shadow {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
 }
 .d-block {
-    display: block;
+  display: block;
 }
 .sticky {
-    position: sticky;
+  position: sticky;
 }
 .top-0 {
-    top: 0;
+  top: 0;
 }
 .flex {
-    display: flex;
+  display: flex;
 }
 .dir-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 .dir-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 .justify-space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 .text-white {
-    color: #fafafa;
+  color: #fafafa;
 }
 .text-gray-shade {
-    color: #656565;
+  color: #656565;
 }
 .text-black-shade {
-    color: #252525;
+  color: #252525;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 .border-none {
-    border: none;
+  border: none;
 }
 .outline-none {
-    outline: none;
+  outline: none;
 }
 .hide {
-    display: none;
-}
-.float-r {
-    float: right;
-}
-.float-l {
-    float: left;
-}
-.v-visibility {
-    visibility: visible;
-}
-.h-visibility {
-    visibility: hidden;
+  display: none;
 }
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 .bg-transparent {
-    background: transparent;
+  background: transparent;
 }
 .margin-right-25 {
-    margin-right: 25px;
-} 
-
+  margin-right: 25px;
+}
 .text-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 .text-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 .text-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 .text-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 .text-28 {
-    font-size: 28px;
+  font-size: 28px;
 }
 .text-35 {
-    font-size: 35px;
+  font-size: 35px;
 }
 .text-38 {
-    font-size: 38px;
+  font-size: 38px;
 }
 .text-80 {
-    font-size: 80px;
+  font-size: 80px;
 }
-
 .font-wt-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 .font-wt-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 .font-wt-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 .font-wt-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 .line-height-46 {
-    line-height: 46px;
+  line-height: 46px;
 }
 .line-height-90 {
-    line-height: 90px;
+  line-height: 90px;
 }
 
-/*          main page css                */
+/*              main page css                */
 .heading-score-container {
-    border: 2px solid #FFFFFF;
-    border-radius: 13px;
-    width: 700px;
-    height: 120px;
-    margin: 40px auto;
-    font-family: Roboto;
-    padding: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  width: 700px;
+  height: 120px;
+  margin: 60px auto;
+  font-family: Roboto;
+  padding: 12px;
 }
 .computer-score-container, .user-score-container {
-    border-radius: 9px;
-    background-color: var(--bg-white);
-    width: 110px;
-    height: 100px;
-    padding: 5px;
+  border-radius: 9px;
+  background-color: var(--bg-white);
+  width: 110px;
+  height: 100px;
+  padding: 5px;
 }
 
+/*              rock paper scissors content container        */
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  /* padding-top: 16px; */
+}
+.icons-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "rock scissors"
+    "paper paper";
+  place-items: center;
+  height: 400px;
+  padding-top: 20px;
+}
+.icons-container::before {
+  content: "";
+  position: absolute;
+  /* width: 100%; */
+  /* height: 100%; */
+  left: 28%;
+  top: 35%;
+  z-index: -1;
+}
+.icons-btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  background-color: var(--bg-white);
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.rock {
+    width: 80px;
+    height: 60px;
+}
+.rock-btn {
+    border: 16px solid #0074B6;
+    grid-area: rock;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+}
+.scissors {
+    width: 37px;
+    height: 54px;
+    transform: rotate(-5.27deg);
+}
+.scissors-btn {
+    border: 16px solid #BD00FF;
+    grid-area: scissors;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+}
+.paper {
+    width: 72px;
+    height: 72px;
+}
+.paper-btn {
+    border: 16px solid #FFA943;
+    grid-area: paper;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+    justify-self: center;
+    align-self: flex-end;
+}
+.line1, .line2, .line3 {
+  position: absolute;
+  z-index: -1;
+}
+.line1 {
+  left: 32%;
+  top: 25%;
+  width: 35%;
+  height: 5%;
+}
+.line3{
+  left:27%;
+  top: 35%;
+  width: 15%;
+  height: 45%;
+  transform: rotate(-8deg);
+}
+.line2{
+  left:57%;
+  top: 35% ;
+  width: 15%;
+  height: 45%;
+  transform: rotate(8deg);
+}
 
 
 /*          celebration page css         */
 .celebration-container {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 .stars-trophy-container {
-    width: 100vw;
-    position: relative;
-    margin-top: 80px;
+  width: 100vw;
+  position: relative;
+  margin-top: 80px;
 }
 .stars {
-    width: 500px;
-    height: 300px;
-    z-index: 1; 
+  width: 500px;
+  height: 300px;
+  z-index: 1;
 }
 .trophy {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 100px;
-    z-index: 2; 
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
 }
 .content-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .content-container div {
-    width: 418px;
+  width: 418px;
 }
 .hurray {
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 .winning-msg {
-    letter-spacing: 4.5px;
+  letter-spacing: 4.5px;
 }
 .play-btn {
-    border-radius: 9px;
-    font-family: Roboto;
-    color: #6B6B6B;
-    background-color: var(--bg-white);
-    padding: 10px 30px;
-    letter-spacing: 1.25px;
-    bottom: 65px;
-    position: absolute;
+  border-radius: 9px;
+  font-family: Roboto;
+  color: #6b6b6b;
+  background-color: var(--bg-white);
+  padding: 10px 30px;
+  letter-spacing: 1.25px;
+  bottom: 65px;
+  position: absolute;
 }
 .rules-btn {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    border-radius: 10px;
-    border: 2px solid #FFFFFF;
-    font-family: Roboto;
-    padding: 5px 20px;
-    color: #FFFFFF;
-    letter-spacing: 1px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  font-family: Roboto;
+  padding: 5px 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 /*          rules container              */
 .rules-container {
-    width: 280px;
-    border: 7px solid #FFFFFF;
-    border-radius: 13px;
-    padding: 12px;
-    background-color: var(--bg-dark-green);
-    bottom: 80px;
-    right: 30px;
-    position: absolute;
-    z-index: 3;
+  width: 280px;
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+  padding: 12px;
+  background-color: var(--bg-dark-green);
+  bottom: 80px;
+  right: 30px;
+  position: absolute;
+  z-index: 3;
 }
 .list-container {
-    list-style-type: none;
-    padding-left: 18px;
+  list-style-type: none;
+  padding-left: 18px;
 }
 .list-container li {
-    font-family: Roboto;
-    position: relative;
-    margin-bottom: 8px;
+  font-family: Roboto;
+  position: relative;
+  margin-bottom: 8px;
 }
 .list-container li::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 20px;
-    width: 8px;
-    height: 8px;
-    background-color: #FFD600;
-    display: inline-block;
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  background-color: #ffd600;
+  display: inline-block;
 }
 .rules-heading {
-    font-family: Roboto;
-    margin: 10px auto 18px auto;
+  font-family: Roboto;
+  margin: 10px auto 18px auto;
 }
 .cross-btn {
-    background-color: var(--bg-red);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 5px solid #FFFFFF;
-    position: absolute;
-    right: -30px;
-    top: -30px;
+  background-color: var(--bg-red);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  position: absolute;
+  right: -30px;
+  top: -30px;
 }
 .cross-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
