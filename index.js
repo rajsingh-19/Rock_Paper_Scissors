@@ -18,7 +18,6 @@ let againstPcContainer = document.querySelector(".againstPc-container");
 let playReplayBtn = document.querySelector("#playReplayBtn");
 let nextButton = document.querySelector("#nextButton");
 let rulesBtn = document.querySelector(".rules-btn");
-
 let rulesContainer = document.querySelector("#rulesContainer");
 
 //  Function to show the rules container
@@ -43,7 +42,6 @@ let updateScores = (userScoreValue, pcScoreValue) => {
   // Update the score displayed on the page
   userScore.innerText = userScoreValue;
   pcScore.innerText = pcScoreValue;
-
   // Store scores in local storage
   localStorage.setItem("userScore", userScoreValue);
   localStorage.setItem("pcScore", pcScoreValue);
@@ -105,48 +103,12 @@ let userChoice = (userChosen) => {
   pcButton.className = `icons-btn btn-shadow ${pcChosen}-btn`;
 
   //  removes the classes for initial renders
-  userCircleBorder1.classList.remove(
-    "light-green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
-  userCircleBorder2.classList.remove(
-    "green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
-  userCircleBorder3.classList.remove(
-    "dark-green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
-  pcCircleBorder1.classList.remove(
-    "light-green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
-  pcCircleBorder2.classList.remove(
-    "green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
-  pcCircleBorder3.classList.remove(
-    "dark-green-border",
-    "flex",
-    "dir-row",
-    "justify-center",
-    "align-center"
-  );
+  userCircleBorder1.classList.remove("light-green-border", "flex", "dir-row", "justify-center", "align-center");
+  userCircleBorder2.classList.remove("green-border", "flex", "dir-row", "justify-center", "align-center");
+  userCircleBorder3.classList.remove("dark-green-border", "flex", "dir-row", "justify-center", "align-center");
+  pcCircleBorder1.classList.remove("light-green-border", "flex", "dir-row", "justify-center", "align-center");
+  pcCircleBorder2.classList.remove("green-border", "flex", "dir-row", "justify-center", "align-center");
+  pcCircleBorder3.classList.remove("dark-green-border","flex", "dir-row", "justify-center", "align-center");
 
   // Get current scores
   let currentUserScore = parseInt(userScore.innerText);
@@ -165,27 +127,9 @@ let userChoice = (userChosen) => {
     conclusionText.innerText = "YOU WIN";
     // Increment user's score
     currentUserScore++;
-    userCircleBorder1.classList.add(
-      "light-green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
-    userCircleBorder2.classList.add(
-      "green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
-    userCircleBorder3.classList.add(
-      "dark-green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
+    userCircleBorder1.classList.add("light-green-border", "flex", "dir-row", "justify-center", "align-center");
+    userCircleBorder2.classList.add("green-border", "flex", "dir-row", "justify-center", "align-center");
+    userCircleBorder3.classList.add("dark-green-border", "flex", "dir-row", "justify-center", "align-center");
     nextButton.classList.remove("hide");
     nextButton.classList.add("margin-left-20");
     rulesBtn.classList.remove("right-40");
@@ -194,27 +138,9 @@ let userChoice = (userChosen) => {
     conclusionText.innerText = "YOU LOST";
     // Increment PC's score
     currentPcScore++;
-    pcCircleBorder1.classList.add(
-      "light-green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
-    pcCircleBorder2.classList.add(
-      "green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
-    pcCircleBorder3.classList.add(
-      "dark-green-border",
-      "flex",
-      "dir-row",
-      "justify-center",
-      "align-center"
-    );
+    pcCircleBorder1.classList.add("light-green-border", "flex", "dir-row", "justify-center", "align-center");
+    pcCircleBorder2.classList.add("green-border", "flex", "dir-row", "justify-center", "align-center");
+    pcCircleBorder3.classList.add("dark-green-border", "flex", "dir-row", "justify-center", "align-center");
     nextButton.classList.add("hide");
   }
   // Update scores in local storage
