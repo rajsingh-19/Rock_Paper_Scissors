@@ -12,10 +12,12 @@
 </head>
 <body class="celebration-container">
     <main class="flex dir-col">
+        <!--            star and trophy container            -->
         <div class="stars-trophy-container flex justify-center">
             <img class="stars" src="./assets/stars.png" alt="stars images">
             <img class="trophy" src="./assets/trophy.png" alt="trophy image">
         </div>
+        <!--            celebration coontent container        -->
         <div class="content-container flex dir-col align-center text-center text-white font-wt-600">
                 <div class="font-wt-600 text-80 line-height-90 hurray">HURRAY !!</div>
                 <div class="font-wt-600 text-35 line-height-46 winning-msg">YOU WON THE GAME</div> 
@@ -25,11 +27,11 @@
                     </button>
                 </div>
         </div>
-        <div>
-            <button class="rules-btn font-wt-600 text-16 cursor-pointer bottom-40 right-40 bg-transparent"  onclick="openRules()">
-                RULES
-            </button>
-        </div>
+        <!--            rules btn                  -->
+        <button class="rules-btn font-wt-600 text-16 cursor-pointer bottom-40 right-40 bg-transparent"  onclick="openRules()">
+            RULES
+        </button>
+        <!--            rules container          -->
         <div class="rules-container flex dir-col hide" id="rulesContainer">
             <p class="rules-heading text-24 font-wt-500 text-white text-center">Game Rules</p>
             <ul class="list-container text-white">
