@@ -40,21 +40,21 @@
         <div class="container">
             <!--            Main game content container          -->
             <section class="icons-container grid">
-                <button class="icons-btn btn-shadow rock-btn" id="rock" onclick="userChoice('rock')">
+                <button class="icons-btn outline-none border-none cursor-pointer bg-transparent btn-shadow rock-btn" id="rock" onclick="userChoice('rock')">
                     <img class="rock" src="./assets/rock.png" alt="rock" />
                </button>
-                <button class="icons-btn btn-shadow scissors-btn" id="scissors" onclick="userChoice('scissors')">
+                <button class="icons-btn outline-none border-none cursor-pointer bg-transparent btn-shadow scissors-btn" id="scissors" onclick="userChoice('scissors')">
                     <img class="scissors" src="./assets/scissors.png" alt="Scissors" />
                 </button>
               <img src="./assets/line1.png" alt="line 1" class="line1" />
               <img src="./assets/line2.png" alt="line 2" class="line2" />
               <img src="./assets/line3.png" alt="line 3" class="line3" />
-                <button class="icons-btn btn-shadow paper-btn" id="paper" onclick="userChoice('paper')">
+                <button class="icons-btn outline-none border-none cursor-pointer bg-transparent btn-shadow paper-btn" id="paper" onclick="userChoice('paper')">
                     <img class="paper" src="./assets/paper.png" alt="paper" />
                 </button>
             </section>
             <!--            Game result content container        -->
-            <section class="game-result-container hide flex dir-row">
+            <section class="game-result-container hide flex dir-row justify-center">
                 <!--        user side container                  -->
                 <div class="user-picked-container flex dir-col justify-center text-center">
                     <div class="user-picked-heading">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <!--         result container                    -->
-                <div class="game-result-container flex dir-col text-center">
+                <div class="game-result-container flex dir-col text-center justify-center">
                     <div>
                         <p class="text-35 font-wt-800 text-white conclusion"></p>
                     </div>

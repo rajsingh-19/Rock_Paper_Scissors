@@ -124,7 +124,6 @@ body {
 .margin-left-20 {
   margin-left: 20px;
 }
-
 /*              main page css                */
 .heading-score-container {
   border: 2px solid #ffffff;
@@ -167,10 +166,6 @@ body {
   z-index: -1;
 }
 .icons-btn {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
   background-color: var(--bg-white);
   border-radius: 50%;
   width: 130px;
@@ -216,26 +211,23 @@ body {
   width: 35%;
   height: 5%;
 }
-.line3{
-  left:27%;
+.line2, .line3 {
   top: 35%;
   width: 15%;
   height: 45%;
+} 
+.line3{
+  left:27%;
   transform: rotate(-8deg);
 }
 .line2{
   left:57%;
-  top: 35% ;
-  width: 15%;
-  height: 45%;
   transform: rotate(8deg);
 }
-
 /*          game result container        */
 .game-result-container {
   width: 700px;
   height: 400px;
-  justify-content: center;
   font-family: Roboto;
 }
 .conclusion {
@@ -245,7 +237,6 @@ body {
   font-family: Roboto;
   margin-bottom: 20px;
 }
-
 .light-green-border, .green-border, .dark-green-border {
   border-radius: 50%;
   background: #2E9A2563;
@@ -263,7 +254,6 @@ body {
   width: 150px;
   height: 150px;
 }
-
 /*          celebration page css         */
 .celebration-container {
   font-family: Roboto;
@@ -310,7 +300,6 @@ body {
   margin-top: 15px;
   position: absolute;
 }
-
 @keyframes rotateStars {
   0% {
       transform: rotate(0deg) scale(1);
@@ -322,7 +311,6 @@ body {
       transform: rotate(360deg) scale(1);
   }
 }
-
 @keyframes pulseStars {
   0%, 100% {
       transform: scale(1);
@@ -333,11 +321,9 @@ body {
       opacity: 0.7;
   }
 }
-
 .stars {
   animation: rotateStars 4s infinite linear, pulseStars 2s infinite ease-in-out;
 }
-
 /*            rules next btn container       */
 .rules-btn {
   position: absolute;
