@@ -59,10 +59,14 @@
                     <div class="user-picked-heading">
                         <p class="text-16 font-wt-600 text-white">YOU PICKED</p>
                     </div>
-                    <div>
-                        <button class="">
-                            <img class="" src="" alt="" />
-                       </button>
+                    <div class="user-circle-border-1">
+                        <div class="user-circle-border-2">
+                            <div class="user-circle-border-3">
+                                <button class="">
+                                    <img class="" src="" alt="" />
+                               </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="game-result-container flex dir-col text-center">
@@ -82,23 +86,25 @@
                     <div class="pc-picked-heading">
                         <p class="text-16 font-wt-600 text-white">PC PICKED</p>
                     </div>
-                    <div>
-                        <button class="">
-                            <img class="" src="" alt="" />
-                       </button>
+                    <div class="pc-circle-border-1">
+                        <div class="pc-circle-border-2">
+                            <div class="pc-circle-border-3">
+                                <button class="">
+                                    <img class="" src="" alt="" />
+                               </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
         <!--            Rules Container          -->
-        <div class="rules-next-container flex dir-row justify-space-between">
-            <button class="rules-btn font-wt-600 text-16 cursor-pointer bg-transparent" onclick="openRules()">
-                RULES
-            </button>
-            <button class="next-btn font-wt-600 text-16 cursor-pointer bg-transparent hide" id="nextButton" onclick="goToCelebratePage()">
-                NEXT
-            </button>
-        </div>
+        <button class="rules-btn font-wt-600 text-16 cursor-pointer right-40 bottom-40 bg-transparent" onclick="openRules()">
+            RULES
+        </button>
+        <button class="next-btn font-wt-600 text-16 cursor-pointer bottom-40 right-40 margin-left-20 bg-transparent hide" id="nextButton" onclick="goToCelebratePage()">
+            NEXT
+        </button>
         <div class="rules-container flex dir-col hide" id="rulesContainer">
             <p class="rules-heading text-24 font-wt-500 text-white text-center">Game Rules</p>
             <ul class="list-container text-white">
