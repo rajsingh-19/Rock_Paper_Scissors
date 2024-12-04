@@ -9,3 +9,15 @@ This is a website for playing the game - Rock, Paper, Scissors. It's a multileve
 5. There is a rules section at the bottom right, so as soon as you click on it, a pop up will open and you need to write the basic rule of the game, and there is a close button to close the pop up.
 6. The scores are stored in the local storage and the scores are not lost on reloading the page.
 7. Shows celebration animation if the human wins against the computer.
+
+**************************************************************************************************************************
+
+![Alt text](https://github.com/rajsingh-19/Rock_Paper_Scissors/blob/d50fa36cddd3db5405ed129d0c4af1ec7700ccae/Screenshot%20(89).png)
+**************************************************************************************************************************
+![Alt text](https://github.com/rajsingh-19/Rock_Paper_Scissors/blob/d50fa36cddd3db5405ed129d0c4af1ec7700ccae/Screenshot%20(93).png)
+**************************************************************************************************************************
+![Alt text](https://github.com/rajsingh-19/Rock_Paper_Scissors/blob/d50fa36cddd3db5405ed129d0c4af1ec7700ccae/Screenshot%20(91).png)
+**************************************************************************************************************************
+![Alt text](https://github.com/rajsingh-19/Rock_Paper_Scissors/blob/d50fa36cddd3db5405ed129d0c4af1ec7700ccae/Screenshot%20(92).png)
+**************************************************************************************************************************
+![Alt text](https://github.com/rajsingh-19/Rock_Paper_Scissors/blob/d50fa36cddd3db5405ed129d0c4af1ec7700ccae/Screenshot%20(94).png)
